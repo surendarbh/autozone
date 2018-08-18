@@ -1,0 +1,84 @@
+.button-dark {
+    width: 136px;
+    height: 40px;
+    object-fit: contain;
+    background-color: #000000;
+}
+.button-light {
+    width: 136px;
+    height: 40px;
+    border: solid 1px #000000;
+
+}
+
+.btn-content-light {
+    width: 59px;
+    height: 18px;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: condensed;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+
+.btn-content-dark {
+    width: 59px;
+    height: 18px;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: condensed;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+}
+
+.pencilBanner {
+    //width: 1600px;
+   // height: 55px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+    margin : 10px;
+}
+
+.pencilImage {
+
+    float:right;
+
+}
+
+.pencilTitle {
+
+    font-family: -webkit-pictograph;
+    font-size: 14px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: condensed;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #484848;
+
+}
+
+.pencilContent {
+    //margin: 18px 410px;
+   // position:absolute;
+    display: inline-flex;
+    margin-top:1em;
+}
+
+.pencilInfo {
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    font-size: 14px;
+}
+
+
+
