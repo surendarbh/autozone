@@ -71,8 +71,6 @@
 }
 
 .pencilContent {
-    //margin: 18px 410px;
-   // position:absolute;
     display: inline-flex;
     margin-top:1em;
 }
@@ -80,9 +78,15 @@
 .pencil_img{
     max-width:100%;
      width:100%;
-
-     height:auto;
     }
 
+.pencil_img_button{
+    position: absolute;
+    left: 75%;
+    margin-top: 1%;
+    font-weight: bold;
+}
 
-
+.pencil_container{
+    display: inline-flex;
+}
