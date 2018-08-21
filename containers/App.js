@@ -20,6 +20,8 @@ export default class App extends Component {
         return (
 
             // Banner class can be - a) pencilBannerLight and b)pencilBannerDark
+            <div>
+            <h3> Pencil Option 1 </h3>
             <div className = "pencilBannerLight" style={style} onClick= {() => {cta ? alert("yes click") : alert("no")}}>
                 <div className = "pencilContent col-md-12 col-xs-12">
                     <div className= "col-md-3 col-xs-3"> <img alt ="Pencil Banner Image" src="../images/pencilImage.png" className="pencilImage"/></div>
@@ -31,9 +33,15 @@ export default class App extends Component {
                 </div>
             </div>
 
+            <h3> Pencil Option 3 </h3>
 
 
+                <div class="col-md-12 col-xs-12">
+                   <img className="pencil_img" src="../images/pencil_image.JPG"/>
+                 </div>
 
+
+              </div>
 
 
 
