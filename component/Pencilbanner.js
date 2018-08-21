@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import Background from '../images/deal-1-black.png';
 import Button from '../common_Component/Button';
 import "../css/styles.css"
+import ReactHtmlParser from 'react-html-parser';
 
 export default class Pencilbanner extends Component {
 
@@ -17,6 +18,8 @@ export default class Pencilbanner extends Component {
             fontWeight:'bold'
         };
 
+        let htmlContent = '<div><strong>FREE GROUND SHIPPING OVER $25* LOREM IPSUM DOLAR SIT AMET CON.<\/strong><\/div>\n\n<div>Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.<\/div>\n';
+
         return (
 
             // Banner class can be - a) pencilBannerLight and b)pencilBannerDark
@@ -26,7 +29,7 @@ export default class Pencilbanner extends Component {
                 <div className = "pencilContent col-md-12 col-xs-12">
                     <div className= "col-md-3 col-xs-3"> <img alt ="Pencil Banner Image" src="../images/pencilImage.png" className="pencilImage"/></div>
                     <div className = "pencilTitle col-md-6 col-xs-6"> FREE GROUND SHIPPING OVER $25* LOREM IPSUM DOLAR SIT AMET CON.
-                            <div> Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore. </div>
+                        <div> Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore. </div>
                     </div>
             {cta ? <div className = "col-md-3 col-xs-3"><span> SEE DETAILS</span> </div> : ''}
 
@@ -40,8 +43,20 @@ export default class Pencilbanner extends Component {
                    <img className="pencil_img" src="../images/pencil_image.JPG"/>
                  </div>
 
+            <h3> Pencil Option 2 </h3>
 
+        <div className = "pencilBannerLight" style={style} onClick= {() => {cta ? alert("yes click") : alert("no")}}>
+            <div className = "pencilContent col-md-12 col-xs-12">
+                <div className= "col-md-3 col-xs-3"> <img alt ="Pencil Banner Image" src="../images/pencilImage.png" className="pencilImage"/></div>
+
+                    { ReactHtmlParser(htmlContent) }
+                    {cta ? <div className = "col-md-3 col-xs-3"><span> SEE DETAILS</span> </div> : ''}
+                </div>
+
+
+            </div>
               </div>
+
 
 
 
