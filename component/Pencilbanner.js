@@ -76,16 +76,6 @@ export default class Pencilbanner extends Component {
             </div>
               </div>
 
-
-
-
-
-
-=======
-                 {getPencilBanner()}
-              </div>
-
->>>>>>> babf68e5659a79249c8431201aaa8776809ec634
         );
     }
 }
