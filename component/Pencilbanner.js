@@ -10,12 +10,31 @@ export default class Pencilbanner extends Component {
     render() {
        let cta = true;
 
+       let imageWithButton = "../images/pencil_image.JPG";
+       let imagelink ="https://www.google.com";
+
+       let imageWithOutButton = "../images/pencil_image2.JPG";
+       let buttonLink = "https://www.google.com";
+       let content = "SEE DETAILS";
+
+
         let style = {
             //fontSize : "10px",
             //color: "green",
             //backgroundColor:'#dc3545'
             fontWeight:'bold'
         };
+
+        /*
+        This method will return the required banner for option 3 based on the response.
+        */
+       const getPencilBanner = () => {
+        return cta ? <div class="col-md-12 col-xs-12 pencil_container"><img className="pencil_img" src={imageWithOutButton}/>
+        <div className = "pencil_img_button" onClick= {() => {alert("load" + {buttonLink}) }}>
+        <span> {content}</span> </div></div> :
+          <div class="col-md-12 col-xs-12"><a href={imagelink}><img className="pencil_img" src={imageWithButton}/>
+         </a> </div>;
+        }
 
         return (
 
@@ -34,18 +53,8 @@ export default class Pencilbanner extends Component {
             </div>
 
             <h3> Pencil Option 3 </h3>
-
-
-                <div class="col-md-12 col-xs-12">
-                   <img className="pencil_img" src="../images/pencil_image.JPG"/>
-                 </div>
-
-
+                 {getPencilBanner()}
               </div>
-
-
-
-
 
         );
     }
